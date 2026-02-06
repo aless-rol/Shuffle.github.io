@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.time {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profil-icon {
+  position: left;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.signal-bars {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 4px;
+  background-color: #000;
+  border-radius: 1px;
+}
+
+.bar:nth-child(1) {
+  height: 12px;
+}
+.bar:nth-child(2) {
+  height: 16px;
+}
+.bar:nth-child(3) {
+  height: 20px;
+}
+.bar:nth-child(4) {
+  height: 24px;
+}
+
+.wifi-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.battery {
+  width: 24px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.content {
+  padding: 0 24px;
+  margin-top: 32px;
+}
+
+.section {
+  background-color: #f3f4f6;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tag {
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+.tag.selected {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 4px #60a5fa;
+}
+
+.tag.jardinage {
+  background-color: #bbf7d0;
+}
+.tag.musique {
+  background-color: #bfdbfe;
+}
+.tag.culturel {
+  background-color: #fef08a;
+}
+.tag.manuelle {
+  background-color: #dbeafe;
+}
+.tag.sport {
+  background-color: #fed7aa;
+}
+.tag.cuisine {
+  background-color: #86efac;
+}
+.tag.autre {
+  background-color: #fde68a;
+}
+
+.tag.accueillir1 {
+  background-color: #fef08a;
+}
+.tag.motiver {
+  background-color: #86efac;
+}
+.tag.organiser {
+  background-color: #bfdbfe;
+}
+.tag.motiver2 {
+  background-color: #fde68a;
+}
+.tag.preparer {
+  background-color: #dbeafe;
+}
+.tag.accueillir2 {
+  background-color: #fed7aa;
+}
+.tag.ecouter {
+  background-color: #bbf7d0;
+}
+
+.add-button-container {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+}
+
+.add-button {
+  width: 100%;
+  height: 64px;
+  background-color: #000;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.plus-circle {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  background-color: #fed7aa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: #000;
+}
